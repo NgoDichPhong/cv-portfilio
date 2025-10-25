@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Case Study: Thiết kế lại giao diện Portfolio cá nhân | Portfolio của Cậu
+      Ba Minh
+    </title>
+
+    <meta
+      name="description"
+      content="Từ bản phác đến giao diện hoàn thiện – hành trình thiết kế lại website cá nhân để thể hiện phong cách và tư duy thiết kế mới."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Case Study Portfolio Cá Nhân" />
+    <meta
+      property="og:description"
+      content="Thiết kế lại giao diện portfolio cá nhân — từ cảm xúc, wireframe đến prototype và học được gì sau dự án."
+    />
+    <meta property="og:image" content="../assets/blog3.jpg" />
+    <meta property="og:type" content="article" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/blog-detail.css" />
+
+    <!-- Font Awesome (nếu dùng icon giống blog1) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <h1>Blog cá nhân</h1>
+        <nav>
+          <a href="../index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ✅ THÊM DÒNG NÀY -->
+    <main class="container blog-layout">
+      <!-- ===== CỘT TRÁI: Bài viết ===== -->
+      <section class="blog-detail">
+        <div class="blog-detail__header">
+          <p class="blog-detail__meta">Đăng ngày: 23/10/2025 · 8 phút đọc</p>
+          <h1 class="gradient-text">
+            Case Study: Thiết kế lại giao diện Portfolio cá nhân
+          </h1>
+        </div>
+
+        <img
+          src="../assets/blog3.jpg"
+          alt="Portfolio cá nhân giao diện mới"
+          class="blog-detail__image"
+        />
+
+        <div class="blog-detail__content">
+          <p>
+            Với mình,
+            <strong>portfolio không phải là một bộ sưu tập dự án</strong>, mà là
+            một "không gian kể chuyện". Cách mình nghĩ, cách mình cảm, cách mình
+            lựa chọn bố cục, màu sắc – tất cả đều phản ánh con người và tư duy
+            thiết kế ở thời điểm hiện tại.
+          </p>
+
+          <p>
+            Sau gần một năm học và thực hành UI/UX, mình nhận ra portfolio cũ
+            không còn “đại diện cho mình” nữa. Nó không còn cho thấy cách mình
+            làm việc, cách mình hiểu người dùng, cũng không thể hiện được cảm
+            xúc mà mình muốn truyền tải. Vậy nên mình quyết định thiết kế lại —
+            không chỉ để trông đẹp hơn, mà để
+            <em>trở nên chân thật và có chiều sâu hơn.</em>
+          </p>
+
+          <h2>🎨 1. Bắt đầu từ cảm xúc – không phải màu sắc</h2>
+          <p>
+            Trước khi mở Figma, mình viết ra cảm xúc mà mình muốn người xem trải
+            nghiệm khi bước vào portfolio:
+          </p>
+
+          <ul>
+            <li>ấm áp</li>
+            <li>gọn gàng</li>
+            <li>tối giản nhưng có điểm nhấn</li>
+            <li>mang chút cá tính nghệ thuật</li>
+          </ul>
+
+          <blockquote>
+            "Nếu website này là một căn phòng, thì mình muốn người khác cảm thấy
+            thế nào khi bước vào?"
+          </blockquote>
+
+          <p>Mình nhìn lại những gì <strong>không ổn</strong> trong bản cũ:</p>
+
+          <ul>
+            <li>Font chữ hơi nhỏ và khó đọc</li>
+            <li>Bố cục thiếu khoảng thở</li>
+            <li>Màu tím quá chói và hơi “gắng gượng”</li>
+            <li>Phần blog chưa có câu chuyện rõ ràng</li>
+          </ul>
+
+          <h2>📐 2. Wireframe & User Flow — Người xem cần gì trước?</h2>
+
+          <blockquote>
+            “Người truy cập portfolio của mình thường có 2 mục đích: (1) xem dự
+            án, và (2) biết mình là ai.”
+          </blockquote>
+
+          <ul>
+            <li>Giới thiệu ngắn gọn – nhưng có cá tính</li>
+            <li>Một CTA duy nhất dẫn đến Projects</li>
+            <li>
+              About được đặt ngay sau Projects – đủ gần để người xem muốn hiểu
+              thêm
+            </li>
+          </ul>
+
+          <img
+            src="../assets/blog3-wireframe.png"
+            alt="Wireframe Portfolio"
+            class="blog-detail__image"
+          />
+
+          <h2>💻 3. Thiết kế & Prototype – Tối giản nhưng có chiều sâu</h2>
+
+          <ul>
+            <li>Màu nền sáng – tạo sự tĩnh lặng</li>
+            <li>Tím pastel nhạt – vừa có cá tính, vừa thân thiện</li>
+            <li>
+              Font <em>Poppins</em> & <em>Inter</em> – cân bằng giữa mềm mại và
+              rõ nét
+            </li>
+          </ul>
+
+          <p>Một số micro-interactions:</p>
+          <ul>
+            <li>Hover nhẹ trên nút và ảnh dự án</li>
+            <li>Chuyển cảnh dịu</li>
+            <li>Indicator nhỏ trên menu</li>
+          </ul>
+
+          <h2>🌈 4. Những thay đổi nổi bật</h2>
+          <ul>
+            <li><strong>Màu sắc:</strong> Tím pastel + xám nhạt</li>
+            <li><strong>Typography:</strong> Phân cấp thị giác rõ ràng</li>
+            <li><strong>Projects:</strong> Hình rõ, mô tả gọn, có CTA</li>
+            <li><strong>Blog:</strong> Chuyển sang card layout</li>
+          </ul>
+
+          <img
+            src="../assets/toi1.png"
+            alt="Phiên bản hoàn thiện của Portfolio"
+            class="blog-detail__image"
+          />
+          <img
+            src="../assets/toi3.png"
+            alt="Phiên bản hoàn thiện của Portfolio"
+            class="blog-detail__image"
+          />
+
+          <h2>🧠 5. Điều mình học được</h2>
+
+          <p>Qua dự án này, mình rút ra một số bài học quan trọng:</p>
+
+          <ul>
+            <li>
+              <strong>Hiểu người xem:</strong> Portfolio không chỉ để đẹp, mà
+              phải giúp người xem nhanh chóng nắm được mình là ai và làm gì.
+            </li>
+            <li>
+              <strong>Tối giản nhưng rõ ràng:</strong> Giữ giao diện gọn gàng,
+              nhưng vẫn có điểm nhấn để tạo cá tính.
+            </li>
+            <li>
+              <strong>Wireframe và prototype hữu ích:</strong> Giúp xác định bố
+              cục, thứ tự nội dung và thử nghiệm trải nghiệm trước khi thiết kế
+              hoàn chỉnh.
+            </li>
+            <li>
+              <strong>Portfolio là câu chuyện của bạn:</strong> Mỗi chi tiết –
+              màu sắc, font chữ, bố cục – đều thể hiện phong cách và tư duy
+              thiết kế.
+            </li>
+          </ul>
+
+          <p>
+            Nhìn chung,
+            <em
+              >cái đẹp không đến từ việc thêm thật nhiều, mà từ việc giữ lại
+              những gì quan trọng và tạo trải nghiệm có ý nghĩa.</em
+            >
+          </p>
+
+          <h2>💬 6. Lời kết</h2>
+          <p>
+            Nếu bạn đang cân nhắc có nên làm lại portfolio hay không —
+            <strong>hãy làm.</strong>
+            Không phải để hoàn hảo, mà để hiểu mình hơn.
+          </p>
+
+          <p><em>Portfolio không phải để khoe — mà để kết nối.</em></p>
+        </div>
+
+        <a href="../index.html#blog" class="back-to-blog">← Quay lại Blogs</a>
+      </section>
+
+      <!-- ===== CỘT PHẢI: Thông tin ===== -->
+      <aside class="blog-info">
+        <div class="author-box">
+          <img src="../assets/toiday.jpg" alt="Tác giả" />
+          <h4>Xin chào, cảm ơn vì đã ghé qua!</h4>
+          <p>
+            Tôi bắt đầu học Thiết kế UI/UX vì tò mò - và nhanh chóng nhận ra đó
+            là nơi sự sáng tạo đáp ứng được mục đích.
+          </p>
+        </div>
+
+        <div class="subscribe-box">
+          <h4>Hãy để các bài viết tự đến với bạn.</h4>
+          <form>
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Nhập email của bạn"
+              required
+            />
+            <div class="checkbox">
+              <input type="checkbox" id="sub" />
+              <label for="sub">Mình muốn nhận bài viết mới từ bạn. *</label>
+            </div>
+            <button type="submit">Theo dõi</button>
+          </form>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/phatminh.le.505/" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/lf.phastttt/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/NgoDichPhong" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.figma.com/files/team/1558417652033836593/recents-and-sharing?fuid=1558417649774007585"
+            target="_blank"
+            ><i class="fa-brands fa-figma"></i
+          ></a>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>

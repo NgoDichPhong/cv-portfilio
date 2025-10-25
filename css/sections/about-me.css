@@ -29,7 +29,9 @@
 .aboutMe__container {
     width: 70%;
     padding: 3rem;
-    background-color: hsla(var(--p-600-code), 0.1);
+    background-color: #d7c6ff;
+    border: 2px solid rgba(120, 80, 255, 0.4);
+    box-shadow: 0 8px 30px rgba(120, 80, 255, 0.25);
     border-radius: 3rem;
 }
 

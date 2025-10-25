@@ -1,3 +1,6 @@
+/* =========================================================
+   🌸 GLOBAL IMPORTS
+========================================================= */
 @import "theme.css";
 @import "./sections/header.css";
 @import "./sections/about-me.css";
@@ -6,8 +9,13 @@
 @import "./sections/footer.css";
 @import "./animation.css";
 
+/* =========================================================
+   🌍 GLOBAL RESET
+========================================================= */
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
@@ -21,17 +29,16 @@
 }
 
 body {
-	/* Background pattern with Orchid Purple tones */
-	background-color: hsl(270, 100%, 98%);
-	background-size: 23px 23px;
-	background-image: repeating-linear-gradient(45deg,
-			hsl(270, 100%, 99%) 0,
-			hsl(270, 100%, 99%) 2.3px,
-			hsl(270, 100%, 96%) 0,
-			hsl(270, 100%, 96%) 50%);
-	color: var(--p-950);
+	background: url("../assets/bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+	color: hsl(270, 40%, 20%);
 }
 
+
+
+/* =========================================================
+   🔗 LINKS
+========================================================= */
 a {
 	text-decoration: none;
 	color: var(--p-700);
@@ -42,9 +49,11 @@ a:hover {
 	color: var(--p-500);
 }
 
+/* =========================================================
+   🧩 LAYOUT & TYPOGRAPHY
+========================================================= */
 section {
-	margin-top: 120px;
-	margin-bottom: 120px;
+	margin: 120px 0;
 }
 
 .container {
@@ -72,4 +81,600 @@ section {
 	text-align: center;
 	max-width: 65ch;
 	color: var(--n-500);
+}
+
+/* =========================================================
+   📍 NAVBAR
+========================================================= */
+.navbar {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background: rgba(255, 255, 255, 0.85);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 14px 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar__logo {
+	font-weight: 700;
+	font-size: 1.1rem;
+	color: var(--p-900);
+	letter-spacing: 0.5px;
+}
+
+.navbar__menu {
+	list-style: none;
+	display: flex;
+	gap: 32px;
+}
+
+.navbar__menu li a {
+	font-weight: 500;
+	color: var(--n-700);
+	position: relative;
+	transition: all 0.2s ease;
+	padding-bottom: 4px;
+}
+
+.navbar__menu li a::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background: var(--p-600);
+	transition: width 0.3s ease;
+}
+
+.navbar__menu li a:hover::after,
+.navbar__menu li a.active::after {
+	width: 100%;
+}
+
+.navbar__menu li a:hover {
+	color: var(--p-700);
+}
+
+#about,
+#ProjectContainer,
+#blog,
+#contact {
+	scroll-margin-top: 28px;
+}
+
+/* =========================================================
+   🏠 HOME SECTION
+========================================================= */
+.home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100vh + 80px);
+	margin-top: -80px;
+	padding-top: 80px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.home__title {
+	font-family: "Chakra Petch", sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	word-spacing: 0.4em;
+	line-height: 1.2;
+	color: hsl(270, 50%, 20%);
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	margin-top: 390px;
+}
+
+.changing-text,
+.bracket {
+	background: linear-gradient(270deg,
+			hsl(270, 100%, 74%),
+			hsl(280, 80%, 65%),
+			hsl(300, 80%, 60%),
+			hsl(270, 70%, 50%));
+	background-size: 800% 800%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.changing-text {
+	display: inline-block;
+	font-weight: 500;
+	font-family: "Chakra Petch", sans-serif;
+	letter-spacing: 0.02em;
+	white-space: nowrap;
+	overflow: hidden;
+	transition: opacity 0.4s ease, transform 0.4s ease;
+	vertical-align: middle;
+	line-height: 1em;
+	transform: translateY(-5px);
+	font-size: 4rem;
+	opacity: 1;
+}
+
+.bracket {
+	display: inline-block;
+	font-weight: 500;
+	font-family: "Chakra Petch", sans-serif;
+	letter-spacing: -2px;
+	margin: 0 -40px;
+	vertical-align: middle;
+	line-height: 1em;
+	transform: translateY(-5px);
+	font-size: 4rem;
+}
+
+
+/* =========================================================
+   🧭 HEADER MENU (Logo + Toggle)
+========================================================= */
+.menu-header {
+	position: fixed;
+	top: 20px;
+	left: 0;
+	width: 100%;
+	padding: 0 25px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 1000;
+}
+
+.menu-logo {
+	font-family: "Chakra Petch", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	color: hsl(270, 60%, 30%);
+	background: hsl(270, 100%, 74%);
+	padding: 8px 16px;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px hsla(270, 70%, 50%, 0.25);
+	cursor: default;
+	user-select: none;
+	transition: all 0.3s ease;
+}
+
+.menu-logo:hover {
+	transform: scale(1.05);
+	background: hsl(270, 70%, 50%);
+	color: white;
+}
+
+.menu-toggle {
+	background: hsl(270, 60%, 30%);
+	color: white;
+	padding: 8px 16px;
+	border-radius: 10px;
+	font-family: "Chakra Petch", sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+	background: hsl(270, 70%, 50%);
+	box-shadow: 0 0 12px hsla(270, 100%, 74%, 0.8);
+	transform: scale(1.05);
+}
+
+.menu {
+	position: fixed;
+	top: 70px;
+	right: 25px;
+	background: white;
+	border-radius: 12px;
+	padding: 20px 28px;
+	box-shadow: 0 8px 25px hsla(270, 60%, 30%, 0.25);
+	display: none;
+	z-index: 999;
+}
+
+.menu.active {
+	display: block;
+	animation: fadeIn 0.3s ease;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu ul li {
+	margin: 15px 0;
+}
+
+.menu ul li a {
+	color: hsl(270, 60%, 30%);
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	transition: color 0.2s ease;
+}
+
+.menu ul li a:hover {
+	color: hsl(270, 70%, 50%);
+}
+
+/* =========================================================
+   ✨ ANIMATIONS
+========================================================= */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-8px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.blog__row {
+	display: flex;
+	flex-direction: column;
+	/* Mỗi blog 1 dòng */
+	gap: 32px;
+}
+
+.blog__item {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	background: #ffffffd8;
+	border-radius: 16px;
+	box-shadow: 0 6px 18px rgba(123, 79, 179, 0.08);
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.blog__item:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 22px rgba(123, 79, 179, 0.15);
+}
+
+/* Ảnh bên trái, chiếm 40% */
+.blog__item img {
+	width: 40%;
+	aspect-ratio: 16 / 9;
+	/* hoặc 4 / 3, tùy style blog bạn muốn */
+	object-fit: cover;
+	border-radius: 16px 0 0 16px;
+	flex-shrink: 0;
+}
+
+
+/* Nội dung bên phải */
+.blog__content {
+	width: 60%;
+	padding: 24px;
+}
+
+.blog__content h3 {
+	color: hsl(270, 50%, 25%);
+	font-size: 1.5rem;
+	margin-bottom: 12px;
+}
+
+.blog__content p {
+	color: hsl(270, 20%, 40%);
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 16px;
+}
+
+.blog__link {
+	color: hsl(270, 60%, 40%);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.blog__link:hover {
+	color: hsl(270, 70%, 55%);
+}
+
+/* Responsive – màn hình nhỏ */
+@media (max-width: 768px) {
+	.blog__item {
+		flex-direction: column;
+		/* Ảnh trên, text dưới */
+	}
+
+	.blog__item img,
+	.blog__content {
+		width: 100%;
+	}
+}
+
+#blog .section__header p {
+	margin-bottom: 24px;
+}
+
+.contact__wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin-top: 50px;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+/* 2 KHUNG HÌNH CHỮ NHẬT DỌC */
+.contact__box {
+	width: 500px;
+	background-color: #d7c6ff;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* FORM */
+.contact__form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.contact__form input,
+.contact__form textarea {
+	width: 100%;
+	padding: 12px 15px;
+	border-radius: 10px;
+	border: none;
+	background: #fff;
+	outline: none;
+	resize: none;
+}
+
+/* KHUNG THÔNG TIN — CĂN GIỮA */
+.contact__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	/* căn giữa theo chiều dọc */
+	align-items: center;
+	/* căn giữa theo chiều ngang */
+	text-align: center;
+	min-height: 350px;
+	/* đảm bảo khung đủ chiều cao để cân đối */
+}
+
+/* Chữ to hơn */
+.contact__info h3 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+.contact__info p {
+	font-size: 1.1rem;
+	margin-bottom: 10px;
+}
+
+.contact__socials {
+	margin-top: 15px;
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.primaryButton {
+	background: #6e42ff;
+	color: #fff;
+	padding: 12px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	transition: 0.25s;
+}
+
+.primaryButton:hover {
+	background: #5230d1;
+}
+
+/* === KHUNG TỔNG LIÊN HỆ === */
+.contact__wrapper {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	gap: 40px;
+	margin-top: 50px;
+	flex-wrap: wrap;
+}
+
+/* === KHUNG CHUNG CHO FORM & INFO === */
+.contact__box {
+	flex: 1 1 400px;
+	background: rgba(215, 198, 255, 0.9);
+	padding: 40px 35px;
+	border-radius: 22px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	min-height: auto;
+	transition: 0.3s ease;
+}
+
+/* Tiêu đề trong mỗi khung */
+.contact__box h3 {
+	font-size: 1.6rem;
+	font-weight: 800;
+	color: #2b1e53;
+	margin-bottom: 25px;
+}
+
+/* === FORM === */
+.contact__form {
+	gap: 18px;
+}
+
+/* Nhóm input có label */
+.form-group {
+	background: #fff;
+	padding: 14px 18px;
+	border-radius: 12px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	width: 100%;
+}
+
+/* Label */
+.form-group label {
+	font-size: 13px;
+	font-weight: 600;
+	color: #6e42ff;
+	letter-spacing: 0.3px;
+}
+
+/* Input & textarea */
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 10px 12px;
+	border-radius: 8px;
+	border: none;
+	background: #f8f5ff;
+	outline: none;
+	font-size: 1rem;
+	color: #2b1e53;
+	resize: none;
+}
+
+/* Focus */
+.form-group input:focus,
+.form-group textarea:focus {
+	background: #fff;
+	box-shadow: 0 0 0 2px #bda8ff;
+}
+
+/* === THÔNG TIN LIÊN HỆ === */
+.contact__info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	text-align: left;
+	gap: 15px;
+}
+
+/* Dòng thông tin */
+.info-item {
+	background: #fff;
+	padding: 14px 18px;
+	border-radius: 12px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	width: 100%;
+}
+
+/* Nhãn nhỏ phía trên */
+.info-item label {
+	font-size: 13px;
+	font-weight: 600;
+	color: #6e42ff;
+	letter-spacing: 0.3px;
+}
+
+/* Nội dung chính (icon + text) */
+.info-content {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #2b1e53;
+	font-size: 1.05rem;
+}
+
+/* Icon */
+.info-content i {
+	color: #6e42ff;
+	font-size: 1.1rem;
+}
+
+/* === NÚT GỬI === */
+.primaryButton {
+	background: #6e42ff;
+	color: #fff;
+	padding: 12px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	transition: 0.25s;
+	margin-top: 10px;
+}
+
+.primaryButton:hover {
+	background: #5230d1;
+	transform: translateY(-1px);
+	box-shadow: 0 4px 10px rgba(110, 66, 255, 0.3);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+	.contact__wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact__box {
+		width: 100%;
+		max-width: 500px;
+		min-height: auto;
+	}
+}
+
+/* Chữ ký phong cách viết tay */
+.signature {
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+	font-size: 6rem;
+	color: #6e42ff;
+	font-family: 'Pacifico', cursive;
+	/* font viết tay */
+	padding-top: 25px;
+	border-top: 1px dashed rgba(110, 66, 255, 0.3);
+	opacity: 0.9;
 }

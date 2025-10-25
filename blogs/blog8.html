@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tôi đã deploy website đầu tiên của mình như thế nào | Portfolio của Cậu Ba
+      Minh
+    </title>
+    <meta
+      name="description"
+      content="Câu chuyện đưa website đầu tiên lên Internet – phá băng nỗi sợ deploy dành cho người mới lập trình."
+    />
+    <meta
+      property="og:title"
+      content="Tôi đã deploy website đầu tiên của mình như thế nào"
+    />
+    <meta
+      property="og:description"
+      content="Từ localhost đến domain thật – khoảnh khắc website tự tay làm xuất hiện trên Internet lần đầu tiên."
+    />
+    <meta property="og:image" content="../assets/blog8.jpg" />
+    <link rel="stylesheet" href="../css/blog-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ======= HEADER ======= -->
+    <header class="main-header">
+      <div class="container">
+        <h1>Blog cá nhân</h1>
+        <nav>
+          <a href="../index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ======= LAYOUT 2 CỘT ======= -->
+    <main class="container blog-layout">
+      <!-- ===== CỘT TRÁI: Nội dung bài ===== -->
+      <section class="blog-detail">
+        <div class="blog-detail__header">
+          <p class="blog-detail__meta">Đăng ngày: 25/10/2025 · 6 phút đọc</p>
+          <h1>Tôi đã deploy website đầu tiên của mình như thế nào</h1>
+        </div>
+
+        <img
+          src="../assets/blog8.jpg"
+          alt="Deploy website lần đầu"
+          class="blog-detail__image"
+        />
+
+        <div class="blog-detail__content">
+          <p>
+            Hoàn thành một website không phải là dấu chấm hết. Đó chỉ là phần
+            đầu. Phần tiếp theo – và cũng là phần khiến mình hồi hộp nhất –
+            chính là đưa nó lên Internet để người khác có thể nhìn thấy.
+          </p>
+
+          <h2>🚧 1. Localhost không phải Internet</h2>
+          <p>Ban đầu, mình chỉ quen chạy web bằng:</p>
+          <code>http://localhost:3000</code>
+          <p>Mọi thứ ổn, cho đến khi có người hỏi:</p>
+          <blockquote>“Gửi link web xem với?”</blockquote>
+          <p>Và mình nhận ra... mình đâu có link để gửi đâu 😅</p>
+
+          <h2>🔍 2. Tìm nơi “để website sống”</h2>
+          <p>Mình bắt đầu tìm hiểu và biết được:</p>
+          <ul>
+            <li>🌍 <strong>Domain</strong> — địa chỉ website</li>
+            <li>📦 <strong>Hosting</strong> — nơi đặt code</li>
+          </ul>
+          <p>
+            Với người mới, chọn dịch vụ dễ dùng là quan trọng. Và mình chọn:
+            <strong>Vercel</strong> (cũng thử thêm Netlify sau này).
+          </p>
+
+          <h2>⚡ 3. Đẩy code lên GitHub</h2>
+          <p>
+            Để Vercel hoạt động, project cần được đưa lên GitHub. Vậy là mình
+            học cách:
+          </p>
+
+          <code>git add . && git commit -m "deploy" && git push</code>
+
+          <h2>🚀 4. Nhấn nút Deploy</h2>
+          <ol>
+            <li>Đăng nhập Vercel</li>
+            <li>Chọn “New Project”</li>
+            <li>Kết nối repo GitHub</li>
+            <li>Bấm <strong>Deploy</strong></li>
+          </ol>
+
+          <p>Và... mình chờ khoảng 15 giây.</p>
+
+          <blockquote><strong>Nó chạy rồi.</strong></blockquote>
+
+          <h2>🎉 5. Cảm giác lần đầu chia link</h2>
+          <p>Mình gửi link cho bạn mình. Nó mở lên và bảo:</p>
+          <blockquote>“Ê chạy thiệt kìa 😆”</blockquote>
+          <p>
+            Chỉ một câu thôi, nhưng đủ để mình hiểu: tất cả những giờ debug kia
+            đều xứng đáng.
+          </p>
+
+          <h2>💬 Lời kết</h2>
+          <p>
+            Deploy không khó như mình từng tưởng. Nó chỉ khó khi bạn chưa thử.
+          </p>
+          <p>Một ngày nào đó, bạn sẽ tự nói:</p>
+          <blockquote>“Nó lên mạng rồi! Trời ơi đẹp quá!”</blockquote>
+        </div>
+
+        <a href="../index.html#blog" class="back-to-blog">← Quay lại Blogs</a>
+      </section>
+
+      <!-- ===== CỘT PHẢI ===== -->
+      <aside class="blog-info">
+        <div class="author-box">
+          <img src="../assets/toiday.jpg" alt="Tác giả" />
+          <h4>Rất vui khi bạn đọc đến đây 👋</h4>
+          <p>
+            Mình thích những khoảnh khắc “vỡ ra” khi học lập trình — và muốn kể
+            lại chúng.
+          </p>
+        </div>
+
+        <div class="subscribe-box">
+          <h4>Nhận bài viết mới qua email</h4>
+          <form>
+            <label for="email">Email *</label>
+            <input type="email" id="email" placeholder="Nhập email của bạn" />
+            <button type="submit">Theo dõi</button>
+          </form>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/phatminh.le.505/" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/lf.phastttt/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/NgoDichPhong" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.figma.com/" target="_blank"
+            ><i class="fa-brands fa-figma"></i
+          ></a>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
