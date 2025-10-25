@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      JavaScript cơ bản trong 30 phút – từ biến, hàm tới DOM | Blog của Cậu Ba Minh
+    </title>
+
+    <meta
+      name="description"
+      content="Tóm gọn JavaScript trong 30 phút: hiểu biến, hàm, vòng lặp và cách tương tác với DOM để tạo ra website động đầu tiên của bạn."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="JavaScript cơ bản trong 30 phút" />
+    <meta
+      property="og:description"
+      content="Học JavaScript từ con số 0 – chỉ trong 30 phút: từ biến, hàm đến DOM."
+    />
+    <meta property="og:image" content="../assets/blog2.jpg" />
+    <meta property="og:type" content="article" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/blog-detail.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <h1>Blog cá nhân</h1>
+        <nav>
+          <a href="../index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container blog-layout">
+      <!-- ===== CỘT TRÁI ===== -->
+      <section class="blog-detail">
+        <div class="blog-detail__header">
+          <h1 class="gradient-text">
+            JavaScript cơ bản trong 30 phút – từ biến, hàm tới DOM
+          </h1>
+          <p class="blog-detail__meta">Đăng ngày: 25/10/2025 · 6 phút đọc</p>
+        </div>
+
+        <img
+          src="../assets/blog2.jpg"
+          alt="JavaScript cơ bản trong 30 phút"
+          class="blog-detail__image"
+        />
+
+        <div class="blog-detail__content">
+          <p>
+            JavaScript là ngôn ngữ biến website từ <em>tĩnh</em> thành
+            <strong>động</strong> – nơi mọi thứ có thể phản hồi, chuyển động và
+            tương tác. Trong bài này, mình sẽ giúp bạn nắm gọn các nền tảng cơ
+            bản nhất chỉ trong 30 phút.
+          </p>
+
+          <h2>🔹 1. Biến (Variables) – nơi lưu dữ liệu</h2>
+          <p>
+            Biến là hộp để chứa thông tin. Bạn có thể dùng <code>let</code>,
+            <code>const</code> hoặc <code>var</code> để tạo biến:
+          </p>
+
+          <pre><code>let name = "Minh";
+const age = 20;
+var isStudent = true;
+</code></pre>
+
+          <p>
+            Quy tắc nhanh:
+            <ul>
+              <li><code>let</code> – có thể thay đổi giá trị</li>
+              <li><code>const</code> – không đổi (thường dùng nhiều nhất)</li>
+              <li><code>var</code> – cũ rồi, ít dùng</li>
+            </ul>
+          </p>
+
+          <h2>🔹 2. Hàm (Functions) – khối lệnh tái sử dụng</h2>
+          <p>
+            Hàm giúp gom nhiều dòng lệnh lại thành một khối tiện gọi lại.  
+            Ví dụ:
+          </p>
+
+          <pre><code>function sayHello(name) {
+  console.log("Xin chào, " + name + "!");
+}
+
+sayHello("Minh");
+</code></pre>
+
+          <p>
+            Ngoài ra còn có cú pháp ngắn gọn hơn: <strong>arrow function</strong>
+          </p>
+
+          <pre><code>const sum = (a, b) => a + b;</code></pre>
+
+          <h2>🔹 3. Làm quen DOM – cách JavaScript “chạm” vào HTML</h2>
+          <p>
+            DOM (Document Object Model) cho phép bạn truy cập và thay đổi nội
+            dung của website:
+          </p>
+
+          <pre><code>const title = document.querySelector("h1");
+title.textContent = "Xin chào JavaScript!";
+title.style.color = "orange";
+</code></pre>
+
+          <p>
+            👉 Bằng vài dòng code, bạn có thể làm website “phản ứng” khi người
+            dùng nhấn nút, nhập dữ liệu hoặc rê chuột qua.
+          </p>
+
+          <h2>🔹 4. Ví dụ mini – nút đổi màu</h2>
+          <pre><code>&lt;button id="btn"&gt;Đổi màu&lt;/button&gt;
+
+&lt;script&gt;
+  const btn = document.getElementById("btn");
+  btn.addEventListener("click", () =&gt; {
+    document.body.style.backgroundColor = "lightblue";
+  });
+&lt;/script&gt;
+</code></pre>
+
+          <p>
+            Và đó, chỉ với vài dòng đơn giản, bạn đã tạo ra tương tác đầu tiên
+            bằng JavaScript!
+          </p>
+
+          <h2>🚀 Kết luận</h2>
+          <p>
+            JavaScript là nền tảng của web hiện đại – từ hiệu ứng đơn giản cho
+            tới các ứng dụng lớn như Gmail hay Facebook.  
+            Chỉ cần hiểu biến, hàm và DOM, bạn đã đi được 50% chặng đường.
+          </p>
+
+          <p><strong>Hãy mở DevTools và thử ngay nhé!</strong></p>
+        </div>
+
+        <a href="../index.html#blog" class="back-to-blog">← Quay lại Blogs</a>
+      </section>
+
+      <!-- ===== CỘT PHẢI ===== -->
+      <aside class="blog-info">
+        <div class="author-box">
+          <img src="../assets/toiday.jpg" alt="Tác giả" />
+          <h4>Xin chào, cảm ơn vì đã ghé qua!</h4>
+          <p>
+            Tôi là một sinh viên IT đang xây dựng blog chia sẻ về lập trình,
+            thiết kế và những điều mình học được mỗi ngày.  
+            Blog này là nơi mình ghi lại hành trình trưởng thành cùng code.
+          </p>
+        </div>
+
+        <div class="subscribe-box">
+          <h4>Nhận bài viết mới qua email</h4>
+          <form>
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Nhập email của bạn"
+              required
+            />
+            <div class="checkbox">
+              <input type="checkbox" id="sub" />
+              <label for="sub">Tôi muốn nhận bài mới từ bạn *</label>
+            </div>
+            <button type="submit">Theo dõi</button>
+          </form>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/phatminh.le.505/"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/lf.phastttt/"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://github.com/NgoDichPhong"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.figma.com/files/team/1558417652033836593/recents-and-sharing?fuid=1558417649774007585"
+            target="_blank"
+            aria-label="Figma"
+            ><i class="fa-brands fa-figma"></i
+          ></a>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>

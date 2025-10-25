@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cậu Ba Minh Portfolio</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="icon" href="./assets/rocket-icon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asimovian&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--------------------------------- 
+      HOME - Trang Chủ
+    ----------------------------------->
+    <section id="home" class="home">
+      <div class="menu-header">
+        <div class="menu-toggle" id="menu-toggle">MENU +</div>
+      </div>
+
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="#home" class="active">Trang Chủ</a></li>
+          <li><a href="#about">Giới Thiệu</a></li>
+          <li><a href="#ProjectContainer">Đồ Án</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="home__content">
+        <h1 class="home__title">
+          MORE THAN SPACE<br />
+          –IT’S <span class="bracket left">[</span>
+          <span class="changing-text">DESIGN</span>
+          <span class="bracket right">]</span>
+        </h1>
+      </div>
+    </section>
+
+    <!--------------------------------- 
+      About Me - Giới Thiệu
+    ----------------------------------->
+    <section id="about" class="aboutMe__section">
+      <!-- Hình động 2 bên -->
+      <img src="./assets/rocket-icon.svg" alt="rocket icon" />
+
+      <img src="./assets/laptop-icon.svg" alt="laptop icon" />
+
+      <!-- Nội dung chính -->
+      <div class="aboutMe__container">
+        <!--------------- 
+          Header
+        ----------------->
+        <header>
+          <div class="container header__container">
+            <!-- left column -->
+            <div class="header__column--left">
+              <!-- avatar -->
+              <div class="header__img"></div>
+
+              <div class="header__content--left">
+                <h2 class="header__title">Lê Phát Minh</h2>
+                <div class="header__badge_container">
+                  <div class="badge">Thiết kế giao diện web & mobile</div>
+                  <div class="badge">UI/UX Designer</div>
+                </div>
+                <p>
+                  Mong muốn ứng tuyển vị trí
+                  <span>Junior UI/UX Designer</span>
+                  với đam mê thiết kế giao diện sáng tạo và dễ sử dụng.
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="aboutMe__content_container">
+          <h1 class="section__title">Giới Thiệu Bản Thân</h1>
+
+          <p class="section__description">
+            Xin chào! Mình là sinh viên năm cuối trường đại học HUTECH. Mình yêu
+            thích UI/UX Design và thích tạo ra những giao diện đẹp, thân thiện
+            và mang lại trải nghiệm tốt cho người dùng.
+          </p>
+
+          <div class="CTA">
+            <a
+              href="./assets/CV_PhatMinh.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="primaryButton"
+              download
+              >Tải CV</a
+            >
+
+            <a href="#ProjectContainer" class="outlineButton">Xem Dự Án</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------- 
+      Skills - Kỹ Năng
+    ----------------------------------->
+    <section class="skills__section">
+      <div class="container skills__container">
+        <!-- header -->
+        <div class="section__header">
+          <h1 class="section__title">Kỹ năng & Chuyên môn</h1>
+
+          <p class="section__description">
+            Là sinh viên năm 4 yêu thích thiết kế và công nghệ, mình đang học
+            tập và trau dồi kỹ năng trong lĩnh vực UI/UX Design, với mong muốn
+            tạo ra giao diện hiện đại, thân thiện và mang lại trải nghiệm tốt
+            cho người dùng. Bên cạnh đó, mình cũng có kiến thức cơ bản về HTML,
+            CSS, Figma và nguyên tắc thiết kế giao diện.
+          </p>
+        </div>
+
+        <!-- grid -->
+        <div class="skills__grid_container">
+          <!-- grid item 1 -->
+          <div class="skills__grid_item"></div>
+
+          <!-- grid item 2 -->
+          <div class="skills__grid_item">
+            <div class="skills__grid_item_header">
+              <div>
+                <img src="./assets/check-icon.svg" alt="check-icon" />
+                <h2>Công cụ & Kỹ năng</h2>
+              </div>
+              <p>
+                Đang học và sử dụng các công cụ thiết kế phổ biến để xây dựng
+                giao diện và prototype:
+              </p>
+            </div>
+
+            <!-- skill logos -->
+            <div>
+              <!-- list 1 -->
+              <div class="icons-list-wrapper">
+                <div class="icons-list">
+                  <div class="icon-badges">
+                    <img src="./assets/icons/JS.svg" alt="js icon" />
+                    <span>js</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/figma.svg" alt="Figma icon" />
+                    <span>Figma</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/css.svg" alt="CSS icon" />
+                    <span>CSS</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/canva.svg" alt="canva icon" />
+                    <span>canva</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/html.svg" alt="html icon" />
+                    <span>html</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/github.svg" alt="github icon" />
+                    <span>github</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/lottielab.svg"
+                      alt="lottielab icon"
+                    />
+                    <span>lottielab</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/react.svg" alt="react icon" />
+                    <span>react</span>
+                  </div>
+                </div>
+
+                <div class="icons-list">
+                  <div class="icon-badges">
+                    <img src="./assets/icons/JS.svg" alt="js icon" />
+                    <span>js</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/figma.svg" alt="Figma icon" />
+                    <span>Figma</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/css.svg" alt="CSS icon" />
+                    <span>CSS</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/canva.svg" alt="canva icon" />
+                    <span>canva</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/html.svg" alt="html icon" />
+                    <span>html</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/github.svg" alt="github icon" />
+                    <span>github</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/lottielab.svg"
+                      alt="lottielab icon"
+                    />
+                    <span>lottielab</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/react.svg" alt="react icon" />
+                    <span>react</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- list 2 -->
+              <div class="icons-list-wrapper">
+                <div class="icons-list">
+                  <div class="icon-badges">
+                    <img src="./assets/icons/JS.svg" alt="js icon" />
+                    <span>js</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/figma.svg" alt="Figma icon" />
+                    <span>Figma</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/css.svg" alt="CSS icon" />
+                    <span>CSS</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/canva.svg" alt="canva icon" />
+                    <span>canva</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/html.svg" alt="html icon" />
+                    <span>html</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/github.svg" alt="github icon" />
+                    <span>github</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/lottielab.svg"
+                      alt="lottielab icon"
+                    />
+                    <span>lottielab</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/react.svg" alt="react icon" />
+                    <span>react</span>
+                  </div>
+                </div>
+
+                <div class="icons-list">
+                  <div class="icon-badges">
+                    <img src="./assets/icons/JS.svg" alt="js icon" />
+                    <span>js</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/figma.svg" alt="Figma icon" />
+                    <span>Figma</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/css.svg" alt="CSS icon" />
+                    <span>CSS</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/canva.svg" alt="canva icon" />
+                    <span>canva</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/html.svg" alt="html icon" />
+                    <span>html</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/github.svg" alt="github icon" />
+                    <span>github</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/lottielab.svg"
+                      alt="lottielab icon"
+                    />
+                    <span>lottielab</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/react.svg" alt="react icon" />
+                    <span>react</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- grid item 3 -->
+          <div class="skills__grid_item">
+            <div class="skills__grid_item_header">
+              <div>
+                <img src="./assets/check-icon.svg" alt="check icon" />
+                <h2>Kỹ Năng Mềm</h2>
+              </div>
+              <p>
+                Sở hữu kỹ năng giao tiếp, làm việc nhóm và phân tích tốt, với
+                thái độ chủ động, ham học hỏi và khả năng thích nghi cao trong
+                môi trường làm việc năng động.
+              </p>
+            </div>
+
+            <div class="softSkills__container">
+              <div class="softSkills_badge">
+                <p>Giao tiếp hiệu quả</p>
+              </div>
+
+              <div class="softSkills_badge">
+                <p>Phân tích vấn đề</p>
+              </div>
+              <div class="softSkills_badge">
+                <p>Đáng tin cậy</p>
+              </div>
+              <div class="softSkills_badge">
+                <p>Ham học hỏi</p>
+              </div>
+
+              <div class="softSkills__book_icons">
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+              </div>
+            </div>
+          </div>
+
+          <!-- grid item 4 -->
+          <div class="skills__grid_item"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------- 
+      Projects - Dự Án
+    ----------------------------------->
+    <section class="projects__section" id="ProjectContainer">
+      <div class="container projects_container">
+        <!-- header -->
+        <div class="section__header">
+          <h1 class="section__title">Đồ Án Thực Chiến</h1>
+          <p class="section__description">
+            Bộ sưu tập dự án thực tập tại trường này giúp mình củng cố và hoàn
+            thiện những kỹ năng kỹ thuật cũng như khả năng giải quyết vấn đề một
+            cách sáng tạo.
+          </p>
+        </div>
+
+        <!-- cards -->
+        <div class="projects__cards_container">
+          <a
+            href="https://github.com/NgoDichPhong/cv-portfilio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="projects_cards">
+              <div class="projects__cards_wrapper">
+                <img
+                  src="./assets/project1.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
+                />
+              </div>
+              <div class="projects__cards_titles">
+                <h4>dự án 1</h4>
+                <h3>Todo List</h3>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/NgoDichPhong/blog-tin-tuc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="projects_cards">
+              <div class="projects__cards_wrapper">
+                <img
+                  src="./assets/project2.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
+                />
+              </div>
+              <div class="projects__cards_titles">
+                <h4>dự án 2</h4>
+                <h3>trang tin tức bóng đá</h3>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/NgoDichPhong/shop-dien-tu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="projects_cards">
+              <div class="projects__cards_wrapper">
+                <img
+                  src="./assets/project3.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
+                />
+              </div>
+              <div class="projects__cards_titles">
+                <h4>dự án 3</h4>
+                <h3>website bán hàng điện tử</h3>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/NgoDichPhong/cv-portfilio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="projects_cards">
+              <div class="projects__cards_wrapper">
+                <img
+                  src="./assets/project4.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
+                />
+              </div>
+              <div class="projects__cards_titles">
+                <h4>dự án 4</h4>
+                <h3>facebook clone</h3>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/NgoDichPhong/cv-portfilio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="projects_cards">
+              <div class="projects__cards_wrapper">
+                <img
+                  src="./assets/project5.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
+                />
+              </div>
+              <div class="projects__cards_titles">
+                <h4>dự án 5</h4>
+                <h3>thiết kế trang doanh nghiệp</h3>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/NgoDichPhong/cv-portfilio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="projects_cards">
+              <div class="projects__cards_wrapper">
+                <img
+                  src="./assets/project6.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
+                />
+              </div>
+              <div class="projects__cards_titles">
+                <h4>dự án 6</h4>
+                <h3>Thiết kế web</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------- 
+      Blog - Cá Nhân
+    ----------------------------------->
+    <section id="blog" class="blog">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Blog</h2>
+          <p class="section__description">
+            Nơi mình chia sẻ về thiết kế, công nghệ và hành trình làm UI/UX.
+          </p>
+        </div>
+
+        <div class="blog__row">
+          <!-- BLOG ITEM 1 -->
+          <article class="blog__item">
+            <img src="assets/blog1.jpg" alt="Developer sang UI/UX Designer" />
+            <div class="blog__content">
+              <h3>Hành trình từ Developer sang UI/UX Designer</h3>
+              <p>
+                Khám phá cách tư duy kỹ thuật và sáng tạo có thể kết hợp để tạo
+                nên sản phẩm thân thiện người dùng.
+              </p>
+              <a href="blogs/blog1.html" class="blog__link">Đọc thêm →</a>
+            </div>
+          </article>
+
+          <!-- BLOG ITEM 2 -->
+          <article class="blog__item">
+            <img src="assets/blog2.jpg" alt="JavaScript cơ bản trong 30 phút" />
+            <div class="blog__content">
+              <h3>JavaScript cơ bản trong 30 phút – từ biến, hàm tới DOM</h3>
+              <p>
+                Học JavaScript nhanh gọn: nắm chắc biến, hàm và DOM để tự tạo
+                website động đầu tiên.
+              </p>
+              <a href="blogs/blog2.html" class="blog__link">Đọc thêm →</a>
+            </div>
+          </article>
+
+          <!-- BLOG ITEM 3 -->
+          <article class="blog__item">
+            <img src="assets/blog3.jpg" alt="Developer hiểu UX" />
+            <div class="blog__content">
+              <h3>Tại sao Developer nên hiểu về UX?</h3>
+              <p>
+                Khi lập trình viên hiểu người dùng, sản phẩm sẽ trở nên thân
+                thiện hơn bao giờ hết.
+              </p>
+              <a href="blogs/blog3.html" class="blog__link">Đọc thêm →</a>
+            </div>
+          </article>
+
+          <!-- BLOG ITEM 4 -->
+          <article class="blog__item">
+            <img
+              src="assets/blog4.jpg"
+              alt="Học Front-End và những cú vấp đầu tiên"
+            />
+            <div class="blog__content">
+              <h3>Những cú vấp đầu tiên với Front-End</h3>
+              <p>
+                Từ giao diện lệch 1px đến responsive vỡ nát – những bài học mà
+                ai làm Front-End cũng từng trải qua.
+              </p>
+              <a href="blogs/blog4.html" class="blog__link">Đọc thêm →</a>
+            </div>
+          </article>
+
+          <!-- BLOG ITEM 5 -->
+          <article class="blog__item">
+            <img
+              src="assets/blog5.jpg"
+              alt="Khi mình bắt đầu học lập trình mà không có nền tảng IT"
+            />
+            <div class="blog__content">
+              <h3>Khi mình bắt đầu học lập trình mà không có nền tảng IT</h3>
+              <p>
+                Hành trình đi lên từ con số 0 – bắt đầu bằng sự tò mò, tiếp tục
+                bằng sự bền bỉ.
+              </p>
+              <a href="blogs/blog5.html" class="blog__link">Đọc thêm →</a>
+            </div>
+          </article>
+
+          <!-- BLOG ITEM 6 -->
+          <article class="blog__item">
+            <img
+              src="assets/blog6.jpg"
+              alt="Nỗi sợ bị so sánh — câu chuyện về áp lực và tự ti"
+            />
+            <div class="blog__content">
+              <h3>Nỗi sợ bị so sánh</h3>
+              <p>
+                Cảm giác bị so sánh làm nhỏ lại nỗ lực của chúng ta — đây là câu
+                chuyện mình đã vượt qua.
+              </p>
+              <a href="blogs/blog6.html" class="blog__link">Đọc thêm →</a>
+            </div>
+          </article>
+
+          <!-- BLOG ITEM 7 -->
+          <article class="blog__item">
+            <img
+              src="assets/blog7.jpg"
+              alt="Tôi đã học lập trình như thế nào khi không có nền tảng IT"
+            />
+            <div class="blog__content">
+              <h3>Tôi đã học lập trình như thế nào khi không có nền tảng IT</h3>
+              <p>
+                Hành trình tự học từ con số 0 – bắt đầu bằng sự tò mò và đi tiếp
+                bằng sự kiên trì.
+              </p>
+              <a href="blogs/blog7.html" class="blog__link">Đọc thêm →</a>
+            </div>
+          </article>
+
+          <!-- BLOG ITEM 8 -->
+          <article class="blog__item">
+            <img
+              src="assets/blog8.jpg"
+              alt="Sự khác nhau giữa Java và JavaScript"
+            />
+            <div class="blog__content">
+              <h3>Sự khác nhau giữa Java và JavaScript</h3>
+              <p>
+                Hai ngôn ngữ nghe giống nhau nhưng thật ra khác biệt hoàn toàn —
+                hiểu rõ điều này sẽ giúp bạn chọn đúng hướng học.
+              </p>
+              <a href="blogs/blog8.html" class="blog__link">Đọc thêm →</a>
+            </div>
+          </article>
+
+          <!-- BLOG ITEM 9 -->
+          <article class="blog__item">
+            <img
+              src="assets/blog9.jpg"
+              alt="Vì sao kiên trì quan trọng hơn tài năng"
+            />
+            <div class="blog__content">
+              <h3>
+                Vì sao kiên trì quan trọng hơn tài năng trong ngành sáng tạo &
+                công nghệ
+              </h3>
+              <p>
+                Tài năng chỉ là điểm xuất phát. Người đi xa luôn là người không
+                bỏ cuộc.
+              </p>
+              <a href="blogs/blog9.html" class="blog__link">Đọc thêm →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------- 
+      Contact - Liên Hệ
+    ----------------------------------->
+    <section id="contact" class="contact__section">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Liên Hệ</h2>
+          <p class="section__description">
+            Mình luôn sẵn lòng hợp tác, trò chuyện và hỗ trợ
+          </p>
+        </div>
+
+        <div class="contact__wrapper">
+          <!-- KHUNG GỬI TIN NHẮN -->
+          <form action="#" method="POST" class="contact__box contact__form">
+            <h3>Gửi tin nhắn cho mình</h3>
+
+            <div class="form-group">
+              <label>Tên của bạn</label>
+              <input type="text" placeholder="Nhập tên..." required />
+            </div>
+
+            <div class="form-group">
+              <label>Email của bạn</label>
+              <input type="email" placeholder="Nhập email..." required />
+            </div>
+
+            <div class="form-group">
+              <label>Lời nhắn</label>
+              <textarea placeholder="Nhập lời nhắn..." required></textarea>
+            </div>
+
+            <button type="submit" class="primaryButton">Gửi</button>
+          </form>
+
+          <!-- KHUNG THÔNG TIN LIÊN HỆ -->
+          <div class="contact__box contact__info">
+            <h3>Thông tin liên hệ</h3>
+
+            <div class="info-item">
+              <label>Địa chỉ</label>
+              <div class="info-content">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Huyện Cờ Đỏ, Thành Phố Cần Thơ</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <label>Email</label>
+              <div class="info-content">
+                <i class="fa-solid fa-envelope"></i>
+                <span>m04robi@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <label>Số điện thoại</label>
+              <div class="info-content">
+                <i class="fa-solid fa-phone"></i>
+                <span>0911 934 434</span>
+              </div>
+            </div>
+            <div class="signature"><strong>Minh</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------- 
+      Footer
+    ----------------------------------->
+    <footer>
+      <div class="container">
+        <p>© Cậu Ba Minh Portfolio</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
